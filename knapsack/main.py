@@ -7,7 +7,7 @@ def print_menu():
                1 - Greedy by Weight\n
                2 - Greedy by Value\n
                3 - Greedy by Ratio\n
-                                  \n
+               4 - All Greedy     \n
                9 - Exit\n
                ================================\n
            Enter a choice and press enter:"""
@@ -25,7 +25,7 @@ def printAnswer(result, algType):
         totalValue += int(row[2])
         print(row)
 
-    print('\nWhich results in a total weight of {} and a total value of {}'.format(totalWeight, totalValue))
+    print('\nWhich results in a total weight of {} and a total value of {}\n\n'.format(totalWeight, totalValue))
 
 
 
@@ -41,16 +41,36 @@ def menu():
 
         if user_input == 1:
             print('Running the Greedy by Weight Algorithm')
-            printAnswer(algs.greedyByWeight(), "Greedy by Weight")
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            printAnswer(algs.greedyByWeight(user_input), "Greedy by Weight")
 
         elif user_input == 2:
             print('Running the Greedy by Value Algorithm')
-            printAnswer(algs.greedyByValue(), "Greedy by Value")
+
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            printAnswer(algs.greedyByValue(user_input), "Greedy by Value")
 
         elif user_input == 3:
             print('Running the Greedy by Ratio Algorithm')
-            printAnswer(algs.greedyByRatio(), "Greedy by Ratio")
 
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            printAnswer(algs.greedyByRatio(user_input), "Greedy by Ratio")
+
+        elif user_input == 4:
+            print('Running All Algs')
+
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            printAnswer(algs.greedyByWeight(user_input), "Greedy by Weight")
+            printAnswer(algs.greedyByValue(user_input), "Greedy by Value")
+            printAnswer(algs.greedyByRatio(user_input), "Greedy by Ratio")
         elif user_input == 9:
             print('Exiting...')
 

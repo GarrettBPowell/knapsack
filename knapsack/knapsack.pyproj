@@ -56,6 +56,11 @@
     <Content Include="resources\n04.csv" />
     <Content Include="resources\n05.csv" />
     <Content Include="resources\n06.csv" />
+    <Content Include="resources\test1.csv" />
+    <Content Include="resources\test2.csv" />
+    <Content Include="resources\test3.csv" />
+    <Content Include="resources\test4.csv" />
+    <Content Include="resources\test5.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
