@@ -1,14 +1,17 @@
 import algs
+import time
 
 def print_menu():
     menu = """================================\n
            MENU\n
                ================================\n
-               1 - Greedy by Weight\n
-               2 - Greedy by Value\n
-               3 - Greedy by Ratio\n
-               4 - All Greedy     \n
-               9 - Exit\n
+               1 - Greedy by Weight            \n
+               2 - Greedy by Value             \n
+               3 - Greedy by Ratio             \n
+               4 - All Greedy                  \n
+               5 - Exhaustive w\ Prune         \n
+               6 - Exhaustive Search           \n
+               9 - Exit                        \n
                ================================\n
            Enter a choice and press enter:"""
     print(menu)
@@ -36,44 +39,60 @@ def menu():
     user_input = 0
 
     while user_input != 9:
-
+        
         user_input = int(input())
+        #startTime = time.time()
 
+        # Greedy by Weight
         if user_input == 1:
             print('Running the Greedy by Weight Algorithm')
             print("What is the name of the file in the cases folder that you want to use? (No extension)")
             user_input = input()
-
             printAnswer(algs.greedyByWeight(user_input), "Greedy by Weight")
 
+        # Greedy by Value
         elif user_input == 2:
             print('Running the Greedy by Value Algorithm')
-
             print("What is the name of the file in the cases folder that you want to use? (No extension)")
             user_input = input()
-
             printAnswer(algs.greedyByValue(user_input), "Greedy by Value")
 
+        # Greedy by Ratio
         elif user_input == 3:
             print('Running the Greedy by Ratio Algorithm')
-
             print("What is the name of the file in the cases folder that you want to use? (No extension)")
             user_input = input()
-
             printAnswer(algs.greedyByRatio(user_input), "Greedy by Ratio")
 
+        # All 3 Greedy
         elif user_input == 4:
             print('Running All Algs')
-
             print("What is the name of the file in the cases folder that you want to use? (No extension)")
             user_input = input()
-
             printAnswer(algs.greedyByWeight(user_input), "Greedy by Weight")
             printAnswer(algs.greedyByValue(user_input), "Greedy by Value")
             printAnswer(algs.greedyByRatio(user_input), "Greedy by Ratio")
+
+        # Exhaustive with Pruning
+        elif user_input == 5:
+            print('Running Exhaustive with Pruning')
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+            printAnswer(algs.exhaustivePrune(user_input), "Exhaustive Search with Pruning")
+
+        # Exhaustive
+        elif user_input == 6:
+            print('Running Exhaustive Search')
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            printAnswer(algs.exhaustiveSearch(user_input), "Exhaustive Search")
+
+        # Exit
         elif user_input == 9:
             print('Exiting...')
-
+        #endTime = time.time()
+        #print("Time elapsed = {}".format(endTime - startTime))
         print("\nPress enter to continue...")
         clutter = input()
         print('\n\n\n\n\n\n')

@@ -25,6 +25,9 @@
     <Compile Include="algs.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="fileReader.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="resources\" />
@@ -34,33 +37,12 @@
     <Content Include="resources\k10.csv" />
     <Content Include="resources\k24.csv" />
     <Content Include="resources\k30.csv" />
-    <Content Include="resources\m01.kp.csv" />
-    <Content Include="resources\m02.kp.csv" />
-    <Content Include="resources\m03.kp.csv" />
-    <Content Include="resources\m04.kp.csv" />
-    <Content Include="resources\m05.kp.csv" />
-    <Content Include="resources\m06.kp.csv" />
-    <Content Include="resources\m07.kp.csv" />
-    <Content Include="resources\m08.kp.csv" />
-    <Content Include="resources\m09.kp.csv" />
-    <Content Include="resources\m10.kp.csv" />
-    <Content Include="resources\m11.kp.csv" />
-    <Content Include="resources\m12.kp.csv" />
-    <Content Include="resources\m13.kp.csv" />
-    <Content Include="resources\m14.kp.csv" />
-    <Content Include="resources\m15.kp.csv" />
-    <Content Include="resources\m16.kp.csv" />
-    <Content Include="resources\n01.csv" />
-    <Content Include="resources\n02.csv" />
-    <Content Include="resources\n03.csv" />
-    <Content Include="resources\n04.csv" />
-    <Content Include="resources\n05.csv" />
-    <Content Include="resources\n06.csv" />
     <Content Include="resources\test1.csv" />
     <Content Include="resources\test2.csv" />
     <Content Include="resources\test3.csv" />
     <Content Include="resources\test4.csv" />
     <Content Include="resources\test5.csv" />
+    <Content Include="resources\mt1.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
