@@ -1,5 +1,6 @@
 import algs
 import time
+import optoSol as op
 
 def print_menu():
     menu = """================================\n
@@ -11,6 +12,7 @@ def print_menu():
                4 - All Greedy                  \n
                5 - Exhaustive w\ Prune         \n
                6 - Exhaustive Search           \n
+               7 - Simmulated Annealing        \n
                9 - Exit                        \n
                ================================\n
            Enter a choice and press enter:"""
@@ -87,6 +89,14 @@ def menu():
             user_input = input()
 
             printAnswer(algs.exhaustiveSearch(user_input), "Exhaustive Search")
+
+        # Annealing
+        elif user_input == 7:
+            print('Running Simmulated Annealing')
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            printAnswer(op.annealing(user_input), "Simmulated Annealing")
 
         # Exit
         elif user_input == 9:
