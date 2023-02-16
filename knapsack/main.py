@@ -13,6 +13,7 @@ def print_menu():
                5 - Exhaustive w\ Prune         \n
                6 - Exhaustive Search           \n
                7 - Simmulated Annealing        \n
+               8 - Run All ALGS                \n
                9 - Exit                        \n
                ================================\n
            Enter a choice and press enter:"""
@@ -32,7 +33,17 @@ def printAnswer(result, algType):
 
     print('\nWhich results in a total weight of {} and a total value of {}\n\n'.format(totalWeight, totalValue))
 
+def printResults(name, algType, result, startTime):
+    runTime = time.time() - startTime
+    totalWeight = 0
+    totalValue = 0
+    size = len(result[1])
 
+    for row in result[1]:
+        totalWeight += int(row[1])
+        totalValue += int(row[2])
+
+    print("{}, {}, {}, {}, {}, {}".format(name, algType, runTime, totalValue, totalWeight, size))
 
 
 def menu():
@@ -43,7 +54,7 @@ def menu():
     while user_input != 9:
         
         user_input = int(input())
-        #startTime = time.time()
+        startTimeSelection = time.time()
 
         # Greedy by Weight
         if user_input == 1:
@@ -95,14 +106,36 @@ def menu():
             print('Running Simmulated Annealing')
             print("What is the name of the file in the cases folder that you want to use? (No extension)")
             user_input = input()
-
             printAnswer(op.annealing(user_input), "Simmulated Annealing")
+
+        elif user_input == 8:
+            print('Running All Approaches')
+            print("What is the name of the file in the cases folder that you want to use? (No extension)")
+            user_input = input()
+
+            print('\n#####################################################################\n')
+
+            startTime = time.time()
+            printResults(user_input, "Greedy by Weight", algs.greedyByWeight(user_input), startTime)
+            startTime = time.time()
+            printResults(user_input, "Greedy by Value", algs.greedyByValue(user_input), startTime)
+            startTime = time.time()
+            printResults(user_input, "Greedy by Ratio", algs.greedyByRatio(user_input), startTime)
+            startTime = time.time()
+            printResults(user_input, "Exhaustive Search with Pruning", algs.exhaustivePrune(user_input), startTime)
+            startTime = time.time()
+            printResults(user_input, "Exhaustive Search", algs.exhaustiveSearch(user_input), startTime)
+            startTime = time.time()
+            printResults(user_input, "Simmulated Annealing", op.annealing(user_input), startTime)
+
+            print('\n#####################################################################\n')
 
         # Exit
         elif user_input == 9:
             print('Exiting...')
-        #endTime = time.time()
-        #print("Time elapsed = {}".format(endTime - startTime))
+            break
+        endTime = time.time()
+        print("Time elapsed for selection = {}".format(endTime - startTimeSelection))
         print("\nPress enter to continue...")
         clutter = input()
         print('\n\n\n\n\n\n')

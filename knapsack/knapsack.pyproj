@@ -33,21 +33,49 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="resourcesTwo\" />
     <Folder Include="resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="resources\k05.csv" />
-    <Content Include="resources\k10.csv" />
-    <Content Include="resources\k24.csv" />
-    <Content Include="resources\k30.csv" />
+    <Content Include="resourcesTwo\k05.csv" />
+    <Content Include="resourcesTwo\k10.csv" />
+    <Content Include="resourcesTwo\k24.csv" />
+    <Content Include="resourcesTwo\k30.csv" />
+    <Content Include="resourcesTwo\test1.csv" />
+    <Content Include="resourcesTwo\test2.csv" />
+    <Content Include="resourcesTwo\test3.csv" />
+    <Content Include="resourcesTwo\test4.csv" />
+    <Content Include="resourcesTwo\test5.csv" />
+    <Content Include="resourcesTwo\mt1.csv" />
+    <Content Include="resourcesTwo\test8.csv" />
+    <Content Include="resourcesTwo\test7.csv" />
     <Content Include="resources\test1.csv" />
+    <Content Include="resources\test10.csv" />
+    <Content Include="resources\test100.csv" />
+    <Content Include="resources\test11.csv" />
+    <Content Include="resources\test12.csv" />
+    <Content Include="resources\test13.csv" />
+    <Content Include="resources\test14.csv" />
     <Content Include="resources\test2.csv" />
+    <Content Include="resources\test20.csv" />
+    <Content Include="resources\test200.csv" />
+    <Content Include="resources\test21.csv" />
     <Content Include="resources\test3.csv" />
+    <Content Include="resources\test30.csv" />
     <Content Include="resources\test4.csv" />
+    <Content Include="resources\test40.csv" />
+    <Content Include="resources\test400.csv" />
     <Content Include="resources\test5.csv" />
-    <Content Include="resources\mt1.csv" />
-    <Content Include="resources\test8.csv" />
+    <Content Include="resources\test50.csv" />
+    <Content Include="resources\test6.csv" />
+    <Content Include="resources\test60.csv" />
     <Content Include="resources\test7.csv" />
+    <Content Include="resources\test75.csv" />
+    <Content Include="resources\test8.csv" />
+    <Content Include="resources\test9.csv" />
+    <Content Include="resources\test90.csv" />
+    <Content Include="Testcases.csv" />
+    <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

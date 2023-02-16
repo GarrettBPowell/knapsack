@@ -30,8 +30,6 @@ def greedyByValue(fileName):
     fileData = fr.readFile(fileName)
     fileData[2].sort(key=lambda a: a[2], reverse=True)
 
-    print(fileData[2])
-
     answer = grabAsMuchAsPossible(fileData[1], fileData[2])
     return(fileData[1], answer)
 
@@ -66,9 +64,9 @@ def exPruneRun(remainingWeight, n, values):
     # Base Case and prune by weight
     if (n == 0 or remainingWeight == 0):
         return []
-
     # can you not add the current item? Don't
     if (remainingWeight - values[n - 1][1] < 0):
+       
         return exPruneRun(remainingWeight, n - 1, values)
 
      # try with adding and not adding
