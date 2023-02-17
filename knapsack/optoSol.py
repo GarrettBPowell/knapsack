@@ -26,9 +26,11 @@ def getTotalValueAndSize(sack, data, maxSize):
   i = 0;
   for row in data:
     if sack[i] == 1:
-      totalVal += row[2]
-      totalSize += row[1]
+        totalVal += row[2]
+        totalSize += row[1]
     i+=1
+
+  #print(totalSize, maxSize, totalVal)
 
   # if weight exceeds the maxSize, set value to 0
   if totalSize > maxSize: 
@@ -100,41 +102,27 @@ def annealing(fileName):
 
     # non seeded rand
     rnd = np.random.RandomState(RANDOM_SEED_VALUE) 
-    numOfRuns = 10000
-    startingTemp = 1000000.0
+    numOfRuns = 1000
+    startingTemp = 10000.0
     alpha = 0.99
 
     # take all in sack initially
+    valueOfCurrentSack = 0;
     initialGuess = np.ones(N, dtype=np.int64)
-    sackAll = runAnnealing(N, rnd, fileData[2], maxWeight, numOfRuns, startingTemp, alpha, initialGuess)
+    takeThisSack = np.ones(N, dtype=np.int64) # the final sack we take
+    i = 0
+    while(valueOfCurrentSack == 0 or i < 10):
+        sackAll = runAnnealing(N, rnd, fileData[2], maxWeight, numOfRuns, startingTemp, alpha, initialGuess)
 
-    # this was going to check 3 different state states, but take all appears to do best most of the time 
-
-                # take nothing from sack initially
-                #initialGuess = np.zeros(N, dtype=np.int64)
-                #sackNone = runAnnealing(N, rnd, fileData[2], maxWeight, numOfRuns, startingTemp, alpha, initialGuess)
-
-                # random start state of sack
-                #np.random.seed(RANDOM_SEED_VALUE); initialGuess = np.random.randint(2, size=N, dtype=np.int64)
-                #sackRand = runAnnealing(N, rnd, fileData[2], maxWeight, numOfRuns, startingTemp, alpha, initialGuess)
-    
-                #(sackAllValue, sackAllWeight) = getTotalValueAndSize(sackAll, fileData[2], N)
-                #(sackNoneValue, sackNoneWeight) = getTotalValueAndSize(sackNone, fileData[2], N)
-                #(sackRandValue, sackRandWeight) = getTotalValueAndSize(sackRand, fileData[2], N)
-
-                # check which stating state gives best solution
-                #if( (sackAllValue >= sackNoneValue) and (sackAllValue >= sackRandValue) and (sackAllWeight <= maxWeight)):
-                #    sack = sackAll
-                #    print("Intial take all is best")
-                #elif( (sackNoneValue >= sackRandValue) and (sackNoneWeight <= maxWeight)):
-                #    sack = sackNone
-                #    print("Initial take none is best")
-                #elif(sackRandWeight <= maxWeight):
-                #    sack = sackRand
-                #    print("Initial rand state is best")
-                #else:
-                #    sack = sackAll
-    
+        # calc values of sack options
+        valueOfCurrentSack = getTotalValueAndSize(sackAll, fileData[2], maxWeight)[0]
+        valueOfTakeSack = getTotalValueAndSize(takeThisSack, fileData[2], maxWeight)[0]
+        # compare values
+        if(valueOfCurrentSack > valueOfTakeSack):
+            takeThisSack = sackAll
+        #print(sackAll)
+        initialGuess = sackAll # if the check fails start with last best guess 
+        i += 1   
 
     # return best outcome
-    return (fileData[1], constructList(sackAll, fileData[2], fileData[0]))
+    return (fileData[1], constructList(takeThisSack, fileData[2], fileData[0]))

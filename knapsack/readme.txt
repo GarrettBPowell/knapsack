@@ -12,9 +12,11 @@ The menu has all single alg options with a few multi alg combination options.
 
 
 *******
-This project does use:
+This project does use the following as libraries:
 numpy
 time
 csv
 os
-as libraries so those will need to be accessable to the project if not already installed
+
+these will need to be accessable to the project if not already installed
+*******

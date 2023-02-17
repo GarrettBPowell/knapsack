@@ -4,148 +4,148 @@ test1,Greedy by Value,0.001000404358,123,50,7
 test1,Greedy by Ratio,0,134,48,9
 test1,Exhaustive Search with Pruning,1.502077818,136,50,9
 test1,Exhaustive Search,1.619181395,136,50,9
-test1,Simmulated Annealing,0.5245943069,94,50,8
+test1,Simmulated Annealing,0.7207121849,131,47,9
 test2,Greedy by Weight,0.004988670349,97,44,9
 test2,Greedy by Value,0.001506328583,92,50,6
 test2,Greedy by Ratio,0,104,47,8
 test2,Exhaustive Search with Pruning,1.199674845,106,49,8
 test2,Exhaustive Search,1.181004047,106,49,8
-test2,Simmulated Annealing,0.4990932941,82,50,7
+test2,Simmulated Annealing,0.5741312504,92,49,7
 test3,Greedy by Weight,0.006981372833,111,70,10
 test3,Greedy by Value,0,110,70,6
 test3,Greedy by Ratio,0,127,70,9
 test3,Exhaustive Search with Pruning,3.57224226,127,70,9
 test3,Exhaustive Search,3.632208586,127,70,9
-test3,Simmulated Annealing,0.4862034321,72,70,6
+test3,Simmulated Annealing,0.4904882908,99,69,7
 test4,Greedy by Weight,0.006504058838,25,39,6
 test4,Greedy by Value,0.0009970664978,67,48,3
 test4,Greedy by Ratio,0,66,48,5
 test4,Exhaustive Search with Pruning,0.03184485435,67,48,3
 test4,Exhaustive Search,0.02889060974,67,48,3
-test4,Simmulated Annealing,0.4548826218,60,48,5
+test4,Simmulated Annealing,0.3832294941,57,47,5
 test5,Greedy by Weight,0.007516860962,8,6,2
 test5,Greedy by Value,0.001394748688,7,5,1
 test5,Greedy by Ratio,0,7,5,1
 test5,Exhaustive Search with Pruning,0,8,6,2
 test5,Exhaustive Search,0,8,6,2
-test5,Simmulated Annealing,0.2944316864,7,5,1
+test5,Simmulated Annealing,0.2533509731,8,6,2
 test6,Greedy by Weight,0.006054878235,27,9,2
 test6,Greedy by Value,0,37,10,2
 test6,Greedy by Ratio,0.0009973049164,37,10,2
 test6,Exhaustive Search with Pruning,0.001995325089,37,10,2
 test6,Exhaustive Search,0.0009970664978,37,10,2
-test6,Simmulated Annealing,0.462515831,136,78,11
+test6,Simmulated Annealing,21.88633585,20,10,2
 test7,Greedy by Weight,0.007499933243,81,43,8
 test7,Greedy by Value,0,92,50,5
 test7,Greedy by Ratio,0,112,49,8
 test7,Exhaustive Search with Pruning,0.3764810562,113,50,8
 test7,Exhaustive Search,0.4320175648,113,50,8
-test7,Simmulated Annealing,0.5289649963,104,48,8
+test7,Simmulated Annealing,0.4664046764,102,47,7
 test8,Greedy by Weight,0.009463310242,80,88,6
 test8,Greedy by Value,0,87,91,4
 test8,Greedy by Ratio,0.000997543335,102,99,6
 test8,Exhaustive Search with Pruning,0.1640145779,106,100,6
 test8,Exhaustive Search,0.1545143127,106,100,6
-test8,Simmulated Annealing,0.4203908443,62,96,5
+test8,Simmulated Annealing,0.5043554306,82,96,5
 test9,Greedy by Weight,0.007979393005,229,132,19
 test9,Greedy by Value,0,182,137,9
 test9,Greedy by Ratio,0,271,140,18
 test9,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test9,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test9,Simmulated Annealing,0.6801440716,157,137,12
+test9,Simmulated Annealing,1.074003935,187,140,12
 test10,Greedy by Weight,0.007070064545,172,15,7
 test10,Greedy by Value,0.0009987354279,67,14,2
 test10,Greedy by Ratio,0,166,14,6
 test10,Exhaustive Search with Pruning,0.6132996082,172,15,7
 test10,Exhaustive Search,0.6153299809,172,15,7
-test10,Simmulated Annealing,0.8177034855,616,169,26
+test10,Simmulated Annealing,300+ second,Did not Finish,0,0
 test11,Greedy by Weight,0.001059293747,252,24,11
 test11,Greedy by Value,0.001001358032,139,25,4
 test11,Greedy by Ratio,0.0009970664978,273,25,11
 test11,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test11,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test11,Simmulated Annealing,1.409384727,1158,361,52
+test11,Simmulated Annealing,300+ second,Did not Finish,0,0
 test12,Greedy by Weight,0.005984067917,703,93,11
 test12,Greedy by Value,0.0009977817535,726,99,9
 test12,Greedy by Ratio,0,766,93,11
 test12,Exhaustive Search with Pruning,2.060024261,771,100,10
 test12,Exhaustive Search,1.964627981,771,100,10
-test12,Simmulated Annealing,0.4462323189,677,98,9
+test12,Simmulated Annealing,0.8046998978,763,98,11
 test13,Greedy by Weight,0.007540464401,1641,249,82
 test13,Greedy by Value,0.000997543335,1672,250,73
 test13,Greedy by Ratio,0.0009970664978,1722,248,79
 test13,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test13,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test13,Simmulated Annealing,1.4726336,1496,250,75
+test13,Simmulated Annealing,2.597465754,1559,250,76
 test14,Greedy by Weight,0.009500741959,2005,339,100
 test14,Greedy by Value,0.0009968280792,2005,339,100
 test14,Greedy by Ratio,0.000997543335,2005,339,100
 test14,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test14,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test14,Simmulated Annealing,1.69263196,2005,339,100
+test14,Simmulated Annealing,2.650974512,2005,339,100
 test20,Greedy by Weight,0.005969762802,250,50,11
 test20,Greedy by Value,0,219,49,7
 test20,Greedy by Ratio,0.001505851746,259,49,10
 test20,Exhaustive Search with Pruning,1.675428391,260,50,10
 test20,Exhaustive Search,1.759397268,260,50,10
-test20,Simmulated Annealing,0.4417762756,229,49,9
+test20,Simmulated Annealing,0.8750123978,256,49,10
 test21,Greedy by Weight,0.0054936409,83,148,8
 test21,Greedy by Value,0.001000642776,121,140,5
 test21,Greedy by Ratio,0,121,140,5
 test21,Exhaustive Search with Pruning,0.8607366085,122,150,6
 test21,Exhaustive Search,0.8443527222,122,150,6
-test21,Simmulated Annealing,0.4481499195,70,150,7
+test21,Simmulated Annealing,0.8670201302,107,149,6
 test30,Greedy by Weight,0.007496356964,240,49,12
 test30,Greedy by Value,0.0009968280792,219,49,7
 test30,Greedy by Ratio,0,264,49,11
 test30,Exhaustive Search with Pruning,39.34735537,265,50,11
 test30,Exhaustive Search,39.14613605,265,50,11
-test30,Simmulated Annealing,0.5806760788,169,50,9
+test30,Simmulated Annealing,1.02923131,232,50,10
 test40,Greedy by Weight,0.006499767303,275,48,13
 test40,Greedy by Value,0.0009968280792,262,50,8
 test40,Greedy by Ratio,0,309,49,11
 test40,Exhaustive Search with Pruning,1165.2875,312,50,12
 test40,Exhaustive Search,1220.245008,312,50,12
-test40,Simmulated Annealing,0.7826545238,284,107,14
+test40,Simmulated Annealing,1.02923131,243,49,11
 test50,Greedy by Weight,0.006349563599,329,50,15
 test50,Greedy by Value,0.0009968280792,298,50,9
 test50,Greedy by Ratio,0.0009977817535,382,49,13
 test50,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test50,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test50,Simmulated Annealing,0.8203372955,602,168,26
+test50,Simmulated Annealing,300+ second,Did not Finish,0,0
 test60,Greedy by Weight,0.005984067917,322,47,15
 test60,Greedy by Value,0.001010656357,334,50,10
 test60,Greedy by Ratio,0.0009915828705,405,50,15
 test60,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test60,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test60,Simmulated Annealing,0.9247248173,753,220,32
+test60,Simmulated Annealing,300+ second,Did not Finish,0,0
 test75,Greedy by Weight,0.006994485855,363,50,17
 test75,Greedy by Value,0.0009970664978,334,50,10
 test75,Greedy by Ratio,0,438,50,15
 test75,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test75,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test75,Simmulated Annealing,1.095392466,1017,286,43
+test75,Simmulated Annealing,300+ second,Did not Finish,0,0
 test90,Greedy by Weight,0.006644010544,383,50,18
 test90,Greedy by Value,0.0009984970093,334,50,10
 test90,Greedy by Ratio,0.000997543335,446,50,16
 test90,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test90,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test90,Simmulated Annealing,1.273054838,793,212,36
+test90,Simmulated Annealing,300+ second,Did not Finish,0,0
 test100,Greedy by Weight,0.006984949112,324,198,26
 test100,Greedy by Value,0.0009968280792,288,199,15
 test100,Greedy by Ratio,0.000997543335,379,200,24
 test100,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test100,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test100,Simmulated Annealing,1.406482697,718,745,52
+test100,Simmulated Annealing,300+ second,Did not Finish,0,0
 test200,Greedy by Weight,0.007495164871,437,196,33
 test200,Greedy by Value,0.001003026962,353,198,18
 test200,Greedy by Ratio,0.001990556717,528,197,30
 test200,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test200,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test200,Simmulated Annealing,2.556276798,1193,1130,96
+test200,Simmulated Annealing,300+ second,Did not Finish,0,0
 test400,Greedy by Weight,0.009195804596,476,199,38
 test400,Greedy by Value,0.002081394196,320,199,16
 test400,Greedy by Ratio,0.002990961075,599,200,34
 test400,Exhaustive Search with Pruning,1200+ seconds,Did not Finish,0,0
 test400,Exhaustive Search,1200+ seconds,Did not Finish,0,0
-test400,Simmulated Annealing,4.961623907,2262,2111,170
+test400,Simmulated Annealing,300+ second,Did not Finish,0,0
